@@ -8,4 +8,18 @@
 100
 >>> print(add_integer(100.3, -2))
 98
+>>> try:
+...     print(add_integer(4, "School"))
+... except Exception as e:
+...     print(e)
+b must be an integer
+>>> try:
+...     print(add_integer(None))
+... except Exception as e:
+...     print(e)
+a must be an integer
+>>> add_integer(2, 4)
+6
+>>> add_integer(0, 0)
+0
 
